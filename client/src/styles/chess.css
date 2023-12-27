@@ -1,0 +1,190 @@
+/* #009999	#1D7373	#006363	#33CCCC	#5CCCCC */
+
+/* GameBorder */
+/* GameBorder */
+/* gameBorder */
+
+.chess {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  user-select: none;
+}
+
+.gameBoardAndInfo {
+  display: flex;
+  align-items: center;
+}
+
+.gameBoard {
+  display: flex;
+  justify-content: center;
+  color: red;
+}
+
+.gameBoard tbody {
+  border: 4px solid #1d7373;
+}
+
+.rotate-180 {
+  rotate: 180deg;
+}
+
+.borderCell {
+  position: relative;
+  width: 8vh;
+  height: 8vh;
+}
+
+.white {
+  background: silver;
+}
+
+.black {
+  background: #295574;
+}
+
+.cellInfo {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  color: #897373;
+}
+
+.figure {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.activeFigure {
+  top: -12px;
+}
+
+.z-index1 {
+  z-index: 1;
+}
+
+.possibleMove {
+  background-image: radial-gradient(#fd00ff, transparent);
+}
+
+.displayNone {
+  display: none;
+}
+
+/* GameInfo */
+/* GameInfo */
+/* gameInfo */
+
+.gameInfo {
+  max-width: 20%;
+  margin-left: 16px;
+}
+
+.opponentIsProposal {
+  display: flex;
+  align-items: center;
+}
+
+.opponentIsProposal svg {
+  width: 40px;
+  height: 40px;
+}
+
+.gameButtons {
+  display: flex;
+}
+
+.gameButton {
+  fill: aqua;
+  margin: 0px 0px 0px 4px;
+  background: #444444;
+  height: 40px;
+  width: 40px;
+}
+
+.gameButton.active {
+  background: red;
+  fill: black;
+  color: black;
+}
+
+.gameButton:hover {
+  fill: #444444;
+  background: aqua;
+}
+
+.buttonReturnMove,
+.buttonGiveUp,
+.buttonBraw {
+  display: flex;
+  align-items: center;
+}
+
+.timer {
+  width: 100%;
+  font-size: 40px;
+  font-family: Times New Roman;
+}
+
+/* .attackCell {
+  background: green;
+} */
+
+/* chat */
+/* chat */
+/* chat */
+
+.chat {
+  border-radius: 8px;
+  border: 1px solid black;
+  margin: 0px 5% 0px 10%;
+  width: 20%;
+  height: 100%;
+  background: #409bd1;
+  max-height: 520px;
+  overflow-y: auto;
+  user-select: text;
+}
+
+.chatInput {
+  width: -webkit-fill-available;
+}
+
+.messageWrap {
+  float: left;
+  width: 100%;
+}
+
+.message {
+  margin-top: 8px;
+  max-width: 70%;
+  border: 1px solid black;
+  padding: 4px 8px;
+  word-wrap: break-word;
+}
+
+.meMessage {
+  float: right;
+  background: aqua;
+  border-right: none;
+  border-radius: 8px 0px 0px 8px;
+}
+
+.opponentMessage {
+  float: left;
+  background: #e400ff;
+  border-left: none;
+  border-radius: 0px 8px 8px 0px;
+}
+
+.serverMessage {
+  border: none;
+  margin: 4px auto 4px auto;
+  border-radius: 8px;
+  color: #0000007d;
+  text-align: center;
+}

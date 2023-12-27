@@ -1,0 +1,136 @@
+.chat,
+.chat-big {
+  border-radius: 8px;
+  border: 1px solid black;
+  width: 25%;
+  height: 100%;
+  background: #409bd1;
+  max-height: 520px;
+  overflow-y: auto;
+  user-select: text;
+  max-height: 64vh;
+}
+
+.chat-big {
+  max-width: 718px;
+  display: none;
+}
+
+.showChatBut {
+  display: none;
+}
+
+.chatInput {
+  width: -webkit-fill-available;
+}
+
+.messageWrap {
+  float: left;
+  width: 100%;
+}
+
+.message {
+  margin-top: 8px;
+  max-width: 70%;
+  border: 1px solid black;
+  padding: 4px 8px;
+  word-wrap: break-word;
+}
+
+.meMessage {
+  float: right;
+  background: aqua;
+  border-right: none;
+  border-radius: 8px 0px 0px 8px;
+}
+
+.opponentMessage {
+  float: left;
+  background: #e400ff;
+  border-left: none;
+  border-radius: 0px 8px 8px 0px;
+}
+
+.serverMessage {
+  border: none;
+  margin: 4px auto 4px auto;
+  border-radius: 8px;
+  color: #0000007d;
+  text-align: center;
+}
+
+@media only screen and (max-width: 575px) {
+  .showChatBut {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: calc(var(--H-header) + 20px);
+    right: 10%;
+    display: flex;
+  }
+
+  .chat {
+    position: absolute;
+    z-index: 1;
+    width: calc(11.1vw * 8 + 12px);
+    height: calc(11.1vw * 8 + 12px);
+    top: calc(var(--H-header) + var(--H-timer) * 1 + 44.4vw);
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .showChatBut {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: calc(var(--H-header) + 20px);
+    right: 10%;
+    display: flex;
+  }
+
+  .chat {
+    position: absolute;
+    z-index: 1;
+    width: calc(11.1vw * 8 + 12px);
+    height: calc(11.1vw * 8 + 12px);
+    top: calc(var(--H-header) + var(--H-timer) * 1 + 44.4vw);
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .chat-big {
+    display: block;
+    position: absolute;
+    top: calc(var(--H-header) + 64px + 64px * 8);
+    width: 80%;
+    height: 33%;
+    margin-botton: 20px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .chat-big {
+    display: block;
+    position: absolute;
+    top: calc(var(--H-header) + 64px + 64px * 8);
+    width: 80%;
+    height: 33%;
+    left: 15%;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .chat-big {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .chat-big {
+    display: block;
+  }
+}

@@ -1,0 +1,90 @@
+/* #009999	#1D7373	#006363	#33CCCC	#5CCCCC */
+/* CreateRoom */
+/* createRoom */
+/* createRoom */
+
+.createRoomWrap {
+  display: flex;
+  justify-content: center;
+}
+
+.createRoom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 32px;
+  padding: 8px;
+  border-radius: 20px;
+  border: 1px solid #33cccc;
+  background: #33cccc;
+  box-shadow: 0 0 12px 12px #33cccc;
+}
+
+.createRoom form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.createRoom p {
+  line-height: 28px;
+}
+
+.createRoom p span:not(.nameOption) {
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.createRoom p span.active:not(.nameOption) {
+  color: aqua;
+  background-image: radial-gradient(#2196f3, transparent);
+  border-radius: 20px;
+}
+
+.createRoom button {
+  margin-top: 8px;
+}
+
+.waitingOpponent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #33cccc;
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid black;
+}
+
+.waitingOpponent button {
+  margin-top: 12px;
+}
+
+/* SearchRooms */
+/* searchRooms */
+/* searchRooms */
+
+.roomsList {
+  width: 80%;
+  margin: 20px 10%;
+  background: #33cccc;
+  border-radius: 20px;
+  box-shadow: 0px 0 20px 8px #33cccc;
+  padding: 12px;
+  text-align: center;
+}
+
+.tableHeader td {
+  border-bottom: 2px solid aquamarine;
+}
+
+.roomItem {
+  cursor: pointer;
+}
+
+.roomItem:hover {
+  background: #009999;
+}
+
+.createdRoom {
+  background: ;
+}

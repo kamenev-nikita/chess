@@ -1,0 +1,130 @@
+.gameInfo {
+  max-width: 20%;
+  margin-left: 16px;
+}
+
+.opponentIsProposal {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.opponentIsProposal svg {
+  width: 100%;
+  height: 40px;
+}
+
+.gameButtons {
+  width: 130px;
+  display: flex;
+  padding: 0px 0px 8px 0px;
+}
+
+.acceptButton {
+  width: 100%;
+  background: var(--color2);
+  fill: #00cf00;
+  border: 1px solid;
+  border-radius: 8px;
+}
+
+.acceptButton:hover {
+  cursor: pointer;
+  background: #9c17bd;
+}
+
+.rejectButton {
+  width: 100%;
+  background: var(--color1);
+  fill: red;
+  border: 1px solid;
+  border-radius: 8px;
+}
+
+.rejectButton:hover {
+  cursor: pointer;
+  background: #35adad;
+}
+
+.gameButton {
+  fill: aqua;
+  background: #444444;
+  height: 40px;
+  width: 40px;
+}
+
+.gameButton.active {
+  background: red;
+  fill: black;
+  color: black;
+}
+
+.gameButton:hover {
+  fill: #444444;
+  background: aqua;
+}
+
+.timer {
+  font-size: 40px;
+  font-family: Times New Roman;
+}
+
+@media only screen and (max-width: 575px) {
+  .timer:nth-child(1) {
+    position: absolute;
+    top: calc(var(--H-header) + var(--H-timer) / 2);
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .timer:nth-child(3) {
+    position: absolute;
+    top: calc(var(--H-header) + var(--H-timer) * 1.5 + 11.1vw * 8);
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .gameButtons {
+    position: absolute;
+    top: calc(var(--H-header) + var(--H-timer) * 2.3 + 11.1vw * 8);
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .timer:nth-child(1) {
+    position: absolute;
+    top: calc(var(--H-header) + var(--H-timer) / 2);
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .timer:nth-child(3) {
+    position: absolute;
+    top: calc(var(--H-header) + var(--H-timer) * 1.5 + 11.1vw * 8);
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .gameButtons {
+    position: absolute;
+    top: calc(var(--H-header) + var(--H-timer) * 2.3 + 11.1vw * 8);
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+}
+
+@media only screen and (min-width: 1400px) {
+}

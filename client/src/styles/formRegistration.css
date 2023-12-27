@@ -1,0 +1,52 @@
+.FormRegistrationWrap {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.FormRegistrationCenter {
+  display: flex;
+  align-items: center;
+}
+
+.FormRegistration {
+  min-width: 300px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 8px;
+  background: #33cccc;
+  box-shadow: 0 0 12px 12px #33cccc;
+  border-radius: 20px;
+}
+
+.FormRegistration .buttons {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.FormRegistration input {
+  width: 90%;
+  line-height: 20px;
+}
+
+.FormRegistration button {
+  margin: 12px 0px 0px 0px;
+}
+
+.FormRegistration a {
+  color: #00000075;
+  cursor: pointer;
+}
+.FormRegistration a:hover {
+  text-shadow: 0 0 20px black;
+}
+
+.FormRegistration p {
+  text-decoration: underline;
+}

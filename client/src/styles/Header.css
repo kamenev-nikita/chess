@@ -1,0 +1,56 @@
+/* #009999	#1D7373	#006363	#33CCCC	#5CCCCC */
+
+header {
+  background: #5ccccc;
+  box-shadow: 0 0 20px 8px #5ccccc;
+  padding: 8px 20px 4px 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo {
+  width: 64px;
+  cursor: pointer;
+}
+
+header .logo:hover {
+  box-shadow: 0 0 20px 4px aqua;
+  background: aqua;
+  border-radius: 16px;
+}
+
+.options {
+  display: flex;
+}
+
+.options a {
+  margin: 0px 8px;
+  cursor: pointer;
+}
+
+.options a.active {
+  margin: 0px 8px;
+  cursor: pointer;
+  box-shadow: 0px 0 20px 8px aqua;
+  background: aqua;
+  border-radius: 16px;
+}
+
+.options a:hover {
+  animation: rotateOption 0.5s normal ease forwards;
+  box-shadow: 0px 0 20px 8px aqua;
+  background: aqua;
+  border-radius: 16px;
+}
+
+@keyframes rotateOption {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(-15deg);
+  }
+}

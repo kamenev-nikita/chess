@@ -1,0 +1,10 @@
+:root {
+  --color1: #33cccc;
+  --color2: #cc00ff;
+
+  --mw: 400px;
+
+  /* height - H */
+  --H-header: 86px;
+  --H-timer: 63px;
+}
