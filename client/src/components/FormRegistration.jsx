@@ -4,7 +4,7 @@ import { AuthContext } from "../context";
 import { APIUsersController } from "../API/users";
 import { Form } from "react-bootstrap";
 import Container from "react-bootstrap/esm/Container";
-import Button from "react-bootstrap/esm/Button";
+// import Button from "react-bootstrap/esm/Button";
 import Row from "react-bootstrap/esm/Row";
 import Col from "react-bootstrap/esm/Col";
 
@@ -136,9 +136,9 @@ const Reg = () => {
               <Col></Col>
               <Col></Col>
               <Col className="col-lg-2">
-                <Button className="button" type="submit">
+                <button className="button" type="submit">
                   зарегистрироваться
-                </Button>
+                </button>
               </Col>
               <Col>
                 <a onClick={() => setIsRegistration(!isRegistration)}>войти</a>
@@ -151,9 +151,9 @@ const Reg = () => {
               <Col></Col>
               <Col></Col>
               <Col className="col-lg-2">
-                <Button className="button" type="submit">
+                <button className="button" type="submit">
                   войти
-                </Button>
+                </button>
               </Col>
               <Col>
                 <a onClick={() => setIsRegistration(!isRegistration)}>
