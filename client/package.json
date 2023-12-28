@@ -5,9 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "predeploy": "npm run build",
+    "predeploy": "npm run build && serverStart",
     "deploy": "gh-pages -d dist",
     "build": "vite build",
+    "serverStart": "node ../server/index.js",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
@@ -22,6 +23,7 @@
     "react-hook-form": "^7.49.2",
     "react-icons": "^4.12.0",
     "react-router-dom": "^6.21.1",
+    "socket.io": "^4.7.2",
     "socket.io-client": "^4.7.2",
     "tailwind-merge": "^2.2.0",
     "tailwindcss-animate": "^1.0.7"
